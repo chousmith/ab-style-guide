@@ -10,7 +10,7 @@
 	position: absolute;
 	overflow: auto;
 	z-index: 1;
-	
+
 	/**
 	 * Navigation Active State
 	 * 1) Triggered when Menu Button is clicked
@@ -50,11 +50,11 @@
 	text-transform: uppercase;
     font-weight: bold;
     transition: all $anim-fast ease;
-    
+
     &--is-active {
 	    color: $color-gray-63;
     }
-    
+
     &:hover, &:focus {
 	    color: $color-gray-63;
     }
@@ -94,10 +94,10 @@
 /**
  * Nav Sublist
  */
- 
+
 .c-nav__sublist {
 	display: none;
- 
+
 	&--has-children {
 		display: block;
 		max-height: 0px;
@@ -106,7 +106,7 @@
 		box-shadow: 0 22px 11px -22px $color-gray-13 inset,
 		            0 -22px 11px -22px $color-gray-13 inset;
 		transition: all $anim-fast ease-out;
-	
+
 	    /**
 	     * Nav Sublist styling when parent nav item is active
 	     */
@@ -115,8 +115,8 @@
 	        padding: 0.3rem 0;
 	        transition-timing-function: ease-in;
 		}
-		
-	} 
+
+	}
 }
 
 /**
@@ -126,9 +126,9 @@
 	border-bottom: 1px dotted $color-gray-13;
 	background: $color-gray-2;
 	position: relative;
-	
+
 	&--has-children {
-		
+
 		&:after {
 		    content: "";
 		    position: absolute;
@@ -143,9 +143,9 @@
 		    border-right: 5px solid transparent;
 		    border-left: 5px solid transparent;
 	    }
-	    
+
 	    &--is-active {
-		    
+
 		    &:after {
 			    transform: rotate(180deg);
 			}
@@ -157,12 +157,13 @@
  * Nav link
  */
 .c-nav__link {
+	color: $color-black;
 	display: flex;
 	padding: 1em;
-	
-	&--is-active {
-		color: $color-brand;
-	}
+
+	// &--is-active {
+	// 	color: $color-brand;
+	// }
 
 	.c-nav__sublist__item & {
 		display: block;
