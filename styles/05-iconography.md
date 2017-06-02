@@ -40,4 +40,12 @@ Other "icons" come from icon sets in images mostly. New style is like https://ww
   <i class="fa fa-angle-double-right fa-stack-1x" style="color:#e33e07"></i>
 </span>
 
+~~~~
+<span class="fa-stack fa-lg fa-3x">
+  <i class="fa fa-circle fa-stack-2x" style="color:#212b3e"></i>
+  <i class="fa fa-cloud fa-stack-1x fa-inverse"></i>
+  <i class="fa fa-angle-double-right fa-stack-1x" style="color:#e33e07"></i>
+</span>
+~~~~
+
 Not too shabby
