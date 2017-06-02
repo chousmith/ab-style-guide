@@ -2,6 +2,8 @@
     #VARIABLES
 \*------------------------------------*/
 
+// one variables file to rule them all...
+
 /**
  * CONTENTS
  *
@@ -71,9 +73,17 @@ $color-utility-success-light: #d4f3e6;
 $color-utility-warning: #a59b15;
 $color-utility-warning-light: #fffecf;
 
-
-
-
+/**
+ * Brand colors
+ */
+$color-abacus-red: #e33e07;
+$color-abacus-grey: #363845;
+$color-abacus-darkblue: #212b3e;
+$color-abacus-darkerblue: #0b253c;
+$color-abacus-green: #87c500;
+// just in case...
+$color-abacus-white: #fff;
+$color-abacus-black: #000;
 
 /*------------------------------------*\
     #TYPOGRAPHY
@@ -86,6 +96,7 @@ $font: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
 
 /**
  * Font Sizing
+ * in rems because rems are better
  */
 $font-size-tiny: 0.65rem;
 $font-size-sm: 0.75rem;
@@ -93,10 +104,6 @@ $font-size-sm-2: 0.85rem;
 $font-size-med: 1rem;
 $font-size-med-2: 1.2rem;
 $font-size-large: 1.4375rem;
-
-
-
-
 
 /*------------------------------------*\
     #LAYOUT
@@ -107,10 +114,6 @@ $font-size-large: 1.4375rem;
  */
 $l-max-width: 60rem;
 $l-max-width-narrow: 36rem;
-
-
-
-
 
 /*------------------------------------*\
     #SPACING
@@ -130,10 +133,6 @@ $pad-comfortable: 1.4rem;
 
 $space-bullet-offset: 1.6rem; /* 2 */
 
-
-
-
-
 /*------------------------------------*\
     #BORDERS
 \*------------------------------------*/
@@ -142,10 +141,6 @@ $space-bullet-offset: 1.6rem; /* 2 */
  * Border variables
  */
 $border-radius: 4px;
-
-
-
-
 
 /*------------------------------------*\
     #ANIMATION
@@ -157,10 +152,6 @@ $border-radius: 4px;
 $fade-quick: 0.15s;
 $fade-long: 0.4s;
 $anim-ease: ease-in-out;
-
-
-
-
 
 /*------------------------------------*\
     #BREAKPOINTS
