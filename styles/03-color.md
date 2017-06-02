@@ -18,7 +18,7 @@ description: Color styles define how color is used in the design system.
 
 | #e33e07 | rgb(227, 62, 7) | hsl(15, 94%, 46%) |
 
-Our "main color" `$color-abacus-red`
+Our "main color" `$color-abacus-red`. <a href="#">Links</a> should be `$color-abacus-red` 
 
 ### Abacus Dark Blue
 

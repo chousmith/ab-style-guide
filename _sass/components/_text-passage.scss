@@ -15,11 +15,11 @@
 	 * Link within the text passage
 	 */
 	a:not(.c-btn) {
-		color: $color-gray-50;
+		// color: $color-gray-50;
         text-decoration: underline;
 
 		&:hover, &:focus {
-			color: $color-gray-73;
+			text-decoration: none;
 		}
 	}
 
