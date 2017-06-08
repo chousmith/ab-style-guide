@@ -20,3 +20,5 @@ github_username:  chousmith
 # Build settings
 markdown: kramdown
 livereload: true
+
+theme: jekyll-theme-minimal
