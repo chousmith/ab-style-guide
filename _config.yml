@@ -21,4 +21,4 @@ github_username:  chousmith
 markdown: kramdown
 livereload: true
 
-theme: jekyll-theme-minimal
+# theme: jekyll-theme-minimal
