@@ -84,13 +84,15 @@ layout: default
 							<a href="#html-{{ forloop.index }}" class="c-tabs__link js-tab">HTML</a>
 						</li><!-- end c-tabs__item -->
 
+            <!--
 						<li class="c-tabs__item">
 							<a href="#angular-{{ forloop.index }}" class="c-tabs__link js-tab">Angular</a>
-						</li><!-- end c-tabs__item -->
+						</li>
 
 						<li class="c-tabs__item">
 							<a href="#react-{{ forloop.index }}" class="c-tabs__link js-tab">React</a>
-						</li><!-- end c-tabs__item -->
+						</li>
+            -->
 
 					</ul><!-- end c-tabs__list -->
 
@@ -107,7 +109,7 @@ layout: default
 
 						</div><!--end c-tabs__panel-->
 
-
+            <!--
 						<div class="c-tabs__panel js-tabs-panel" id="angular-{{ forloop.index }}">
 
 							<div class="pattern-code">
@@ -115,7 +117,7 @@ layout: default
 								<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-{{ forloop.index }}">THIS IS ANGULAR CODE</code></pre>
 							</div>
 
-						</div><!--end c-tabs__panel-->
+						</div>
 
 						<div class="c-tabs__panel js-tabs-panel" id="react-{{ forloop.index }}">
 
@@ -124,7 +126,8 @@ layout: default
 								<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-{{ forloop.index }}">THIS IS REACT CODE</code></pre>
 							</div>
 
-						</div><!--end c-tabs__panel-->
+						</div>
+            -->
 
 					</div><!-- end c-tabs__body-->
 
@@ -141,7 +144,7 @@ layout: default
 
 	<div class="c-section-header ">
 
-		<h1 class="c-section-header__title">Usage</h1>
+		<h2 class="c-section-header__title">Usage</h2>
 
 	</div><!-- end c-section-header -->
 
@@ -205,19 +208,23 @@ layout: default
 
 	<div class="c-section-header ">
 
-		<h1 class="c-section-header__title">Fine print</h1>
+		<h2 class="c-section-header__title">Fine print</h2>
 
 	</div><!-- end c-section-header -->
 
 	<div class="c-text-passage l-linelength-container">
         <ul>
-            <li>Version: 0.3</li>
-            <li>Last updated: April 27, 2017</li>
-            <li>Owner: <a href="#">Jane Doe</a></li>
-            <li><a href="#">Change history</a></li>
+            {% if page.version %}
+              <li>Version: {{ page.version }}</li>
+          	{% endif %}
+            {% if page.date %}
+              <li>Last updated: {{ page.date | date_to_string }}</li>
+          	{% endif %}
+            <!-- <li>Owner: <a href="#">Jane Doe</a></li> -->
+            <!-- <li><a href="#">Change history</a></li> -->
         </ul>
 	</div><!-- end c-text-passage -->
 
-	<a href="#" class="c-btn">Discuss this component</a><!-- end c-btn -->
+	<!--a href="#" class="c-btn">Discuss this component</a><!-- end c-btn -->
 
 </section><!-- end c-section -->
