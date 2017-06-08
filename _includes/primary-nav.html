@@ -23,6 +23,7 @@
 			{% for my_page in site.pages %}
 
 				{% if my_page.group == "guidelines" %}
+        {% unless my_page.exclude_from_nav %}
 				<li class="c-primary-nav__item">
 					<a class="c-primary-nav__link {% if my_page.url == page.url %}is-active is-current{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">
                     {% if my_page.title == "Guidelines" %}
@@ -36,6 +37,7 @@
                     {% endif %}
 					</a>
 				</li>
+        {% endunless %}
 				{% endif %}
 
 			{% endfor %}
@@ -59,6 +61,7 @@
 			{% for my_page in site.pages %}
 				{% if my_page.title %}
 					{% if my_page.group == "styles" %}
+          {% unless my_page.exclude_from_nav %}
 					<li class="c-primary-nav__item">
 						<a class="c-primary-nav__link {% if my_page.url == page.url %}is-active is-current{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">
                         {% if my_page.layout == "landing" %}
@@ -72,6 +75,7 @@
                         {% endif %}
 						</a>
 					</li>
+          {% endunless %}
 					{% endif %}
 				{% endif %}
 			{% endfor %}

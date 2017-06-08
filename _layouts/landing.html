@@ -14,9 +14,11 @@ layout: default
 
 	{% for my_page in site.pages %}
 		{% if my_page.group == the_group and my_page.layout != "landing" %}
-		<li class="c-card-list__item l-grid__item">
-			{% include card.html %}
-		</li>
+      {% unless my_page.exclude_from_nav %}
+  		<li class="c-card-list__item l-grid__item">
+  			{% include card.html %}
+  		</li>
+  		{% endunless %}
 		{% endif %}
 	{% endfor %}
 
