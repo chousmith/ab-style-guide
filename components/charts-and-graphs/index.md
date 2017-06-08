@@ -6,4 +6,5 @@ permalink: /components/charts-and-graphs/
 
 title: Charts and graphs
 description: Essential data-viz patterns
+exclude_from_nav: true
 ---
