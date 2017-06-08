@@ -6,6 +6,8 @@ permalink: /components/blocks-and-cards/card.html
 
 title: Card
 description: Card description
+version: 0.1
+date:   2017-06-08 15:34:00 -0700
 
 
 variations:
